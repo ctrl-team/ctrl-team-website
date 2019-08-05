@@ -11,6 +11,12 @@ body
   height: 100%;
   width: 100%;
 }
+#container a
+{
+	position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
 #container img
 {
   position: absolute;
