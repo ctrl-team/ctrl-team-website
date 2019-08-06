@@ -4,7 +4,6 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    height: 2400px;
 }
 html {
   scroll-behavior: smooth;
@@ -15,46 +14,40 @@ html {
 }
 
 #logo{
-    background: white;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
 #logo d{
   transform: rotate(180deg);
 }
 
-
-.section_content{
-
-    padding: 15vh;
-}
-
 #about{
-    height: 70vh;
-    width: 100%;
-    padding: 15vh;
-    font-size: 30px;
-    background: #0f0f0f;
-    letter-spacing: 2px
+  background: #0f0f0f;
+  padding: 15vh;
+  font-size: 30px
 }
 
-#about_header{
+.section_header{
     font-size: 45px;
     letter-spacing: 0
 }
 
 #games{
     color: #0f0f0f;
+    padding: 15vh
 }
+
 .game
 {
   text-align: center;
+  margin: 1vh;
   font-size: 30px;
   float: left;
-  padding-left: 20px;
 }
 .game a
 {
@@ -67,10 +60,19 @@ html {
   color: #FFCC00;
   transition: all 1s;
 }
-.game img
-{
-  border-radius: 20px;
+
+#wrap_buttons{
+  position: absolute;
+  top: 1vh;
+  right: 5vh;
+  display: flex;
+  font-size: 30px
 }
+
+.buttons{
+  margin-left: 1vw
+}
+
 .buttons a
 {
   text-decoration: none;
@@ -85,19 +87,40 @@ html {
   transition: all 0.5s;
 }
 
-.contact
-{
-  margin-top: 1000px;
-  width: 100%;
-  padding: 1px 0 1px 0;
+#thing{
   background: #0f0f0f;
-  height:30vh;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 1vh;
+  bottom: 0
 }
-.icons
+
+@media screen and (max-width: 640px)
 {
-  height: 58px;
-  width: 58px;
-  vertical-align: middle;
-  max-height: 58px;
-  max-width: 58px;
+  #wrap_buttons{
+    right: 4vh;
+    font-size: 20px
+  }
+
+  #logo a img{
+    height: 300px
+  }
+
+  .section_header{
+    font-size: 40px;
+  }
+
+  #about{
+    font-size: 20px;
+    padding: 10vh
+  }
+
+  #games{
+    padding: 10vh
+  }
+
+  .game img{
+    height: 120px;
+  }
 }
