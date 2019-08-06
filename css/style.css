@@ -22,6 +22,10 @@ html {
     justify-content: center;
     align-items: center
 }
+#logo d{
+  transform: rotate(180deg);
+}
+
 
 .section_content{
 
