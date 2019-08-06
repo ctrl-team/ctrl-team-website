@@ -20,7 +20,7 @@ html {
     width: 100%;
     height: 100vh;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 #logo d{
   transform: rotate(180deg);
@@ -58,7 +58,8 @@ html {
 .game a
 {
   text-decoration: none;
-  color: black;
+  color: white;
+  text-shadow: 0px 0px 7px #000000;
   transition: all 1s;
 }
 .game a:hover
@@ -73,7 +74,8 @@ html {
 .buttons a
 {
   text-decoration: none;
-  color: black;
+  color: white;
+  text-shadow: 0px 0px 7px #000000;
   float: right;
   padding-left: 5px;
   transition: all 0.5s;
@@ -83,6 +85,7 @@ html {
   color: #FFCC00;
   transition: all 0.5s;
 }
+
 .contact
 {
   margin-top: 1000px;
