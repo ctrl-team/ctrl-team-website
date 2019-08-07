@@ -126,4 +126,9 @@ html {
   .game img{
     height: 120px;
   }
+
+  #contact{
+    font-size: 20px;
+    padding: 10vh
+  }
 }
