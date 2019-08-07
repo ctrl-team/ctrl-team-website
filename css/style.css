@@ -90,7 +90,14 @@ html {
 {
   background: #0e0e0e;
   padding: 15vh;
-  font-size: 24px
+  
+}
+.project
+{
+  text-align: center;
+  margin: 1vh;
+  display: inline-grid;
+  background: rgb(211, 211, 211)
 }
 #contact{
   color: black;
@@ -137,4 +144,9 @@ html {
     font-size: 20px;
     padding: 10vh
   }
+}
+
+a{
+  color: black;
+  text-decoration: none;
 }
