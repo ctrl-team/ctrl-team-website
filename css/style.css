@@ -97,7 +97,12 @@ html {
   text-align: center;
   margin: 1vh;
   display: inline-grid;
-  background: rgb(211, 211, 211)
+  color: white !important;
+  background: rgb(22, 22, 22)
+}
+.project a
+{
+  color: rgb(206, 204, 204)
 }
 #contact{
   color: black;
