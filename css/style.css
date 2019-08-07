@@ -46,19 +46,19 @@ html {
 {
   text-align: center;
   margin: 1vh;
-  font-size: 30px;
-  float: left;
+  display: inline-grid;
+  background: rgb(211, 211, 211)
 }
 .game a
 {
   text-decoration: none;
   color: black;
-  transition: all 1s;
+  transition: color 1s;
 }
 .game a:hover
 {
   color: #FFCC00;
-  transition: all 1s;
+  transition: color 1s;
 }
 
 #wrap_buttons{
@@ -79,21 +79,24 @@ html {
   color: black;
   float: right;
   padding-left: 5px;
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 .buttons a:hover
 {
   color: #FFCC00;
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
-#thing{
+#contact{
+  background: #0e0e0e;
+  padding: 15vh;
+  font-size: 30px
+}
+
+#footer{
   background: #0f0f0f;
-  position: fixed;
-  width: 100%;
   text-align: center;
-  padding: 1vh;
-  bottom: 0
+  padding: 1vh
 }
 
 @media screen and (max-width: 640px)
