@@ -86,9 +86,15 @@ html {
   color: #FFCC00;
   transition: color 0.5s;
 }
-
-#contact{
+#projects
+{
   background: #0e0e0e;
+  padding: 15vh;
+  font-size: 24px
+}
+#contact{
+  color: black;
+  background: white;
   padding: 15vh;
   font-size: 30px
 }
