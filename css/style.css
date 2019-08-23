@@ -61,6 +61,24 @@ html {
   transition: color 1s;
 }
 
+.game2
+{
+  text-align: center;
+  margin: 1vh;
+  display: inline-grid;
+}
+.game2 a
+{
+  text-decoration: none;
+  color: black;
+  transition: color 1s;
+}
+.game2 a:hover
+{
+  color: #FFCC00;
+  transition: color 1s;
+}
+
 #wrap_buttons{
   position: absolute;
   top: 1vh;
@@ -90,7 +108,7 @@ html {
 {
   background: #0e0e0e;
   padding: 15vh;
-  
+
 }
 .project
 {
