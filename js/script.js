@@ -3,8 +3,6 @@ const backtotop = document.getElementById('backtotop');
 
 let logo_height = logo_section.offsetHeight;
 
-console.log(logo_height)
-
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > logo_height){
         backtotop.style.display = 'block';
