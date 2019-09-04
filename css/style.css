@@ -13,6 +13,19 @@ html {
     color: #FFCC00
 }
 
+#backtotop{
+  font-size: 50px;
+  color: #FFCC00;
+  display: none;
+  opacity: 0;
+  height: 7vh;
+  width: 7vh;
+  position: fixed;
+  right: 5vh;
+  bottom: 5vh;
+  transition: opacity 300ms;
+}
+
 #logo{
   background: white;
   display: flex;
@@ -144,7 +157,7 @@ html {
 {
   #wrap_buttons{
     right: 4vh;
-    font-size: 15px
+    font-size: 20px
   }
 
   #logo a img{
