@@ -1,183 +1,188 @@
 body{
-  background: white;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .yellow{
-  color: #FFCC00
+    color: #FFCC00
 }
 
 #logo{
-background: white;
-display: flex;
-width: 100%;
-height: 100vh;
-justify-content: center;
-align-items: center;
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo d{
-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #about{
-background: #0f0f0f;
-padding: 15vh;
-font-size: 30px
+  background: #0f0f0f;
+  padding: 15vh;
+  font-size: 30px
 }
 
 .section_header{
-  font-size: 45px;
-  letter-spacing: 0
+    font-size: 45px;
+    letter-spacing: 0
 }
 
 #games{
-  color: #0f0f0f;
-  padding: 15vh
+    color: #0f0f0f;
+    padding: 15vh
 }
 
 .game
 {
-text-align: center;
-margin: 1vh;
-display: inline-grid;
-background: rgb(211, 211, 211)
+  text-align: center;
+  margin: 1vh;
+  display: inline-grid;
+  background: rgb(211, 211, 211)
 }
 .game a
 {
-text-decoration: none;
-color: black;
-transition: color 1s;
+  text-decoration: none;
+  color: black;
+  transition: color 1s;
 }
 .game a:hover
 {
-color: #FFCC00;
-transition: color 1s;
+  color: #FFCC00;
+  transition: color 1s;
 }
 
 .game2
 {
-text-align: center;
-margin: 1vh;
-display: inline-grid;
+  text-align: center;
+  margin: 1vh;
+  display: inline-grid;
 }
 .game2 a
 {
-text-decoration: none;
-color: black;
-transition: color 1s;
+  text-decoration: none;
+  color: black;
+  transition: color 1s;
 }
 .game2 a:hover
 {
-color: #FFCC00;
-transition: color 1s;
+  color: #FFCC00;
+  transition: color 1s;
 }
 
 #wrap_buttons{
-position: absolute;
-top: 1vh;
-right: 5vh;
-display: flex;
-font-size: 30px
+  position: absolute;
+  top: 1vh;
+  right: 5vh;
+  display: flex;
+  font-size: 30px
 }
 
 .buttons{
-margin-left: 1vw
+  margin-left: 1vw
 }
 
 .buttons a
 {
-text-decoration: none;
-color: black;
-float: right;
-padding-left: 5px;
-transition: color 0.5s;
+  text-decoration: none;
+  color: black;
+  float: right;
+  padding-left: 5px;
+  transition: color 0.5s;
 }
 .buttons a:hover
 {
-color: #FFCC00;
-transition: color 0.5s;
+  color: #FFCC00;
+  transition: color 0.5s;
 }
 #projects
 {
-background: #0e0e0e;
-padding: 15vh;
+  background: #0e0e0e;
+  padding: 15vh;
 
 }
 .project
 {
-text-align: center;
-margin: 1vh;
-display: inline-grid;
-color: white !important;
-background: rgb(22, 22, 22)
+  text-align: center;
+  margin: 1vh;
+  display: inline-grid;
+  color: white !important;
+  background: rgb(22, 22, 22)
 }
 .project a
 {
-color: rgb(206, 204, 204)
+  color: rgb(206, 204, 204)
 }
-#contact{
-color: black;
-background: white;
-padding: 15vh;
-font-size: 30px
+#Info{
+  color: black;
+  background: white;
+  padding: 15vh;
+  font-size: 30px
+}
+
+
+.game2 i{
+  font-size: 50px
 }
 
 #footer{
-background: #0f0f0f;
-text-align: center;
-padding: 1vh
+  background: #0f0f0f;
+  text-align: center;
+  padding: 1vh
 }
 
 @media screen and (max-width: 640px)
 {
-#wrap_buttons{
-  right: 4vh;
-  font-size: 15px
-}
+  #wrap_buttons{
+    right: 4vh;
+    font-size: 15px
+  }
 
-#logo a img{
-  height: 300px
-}
+  #logo a img{
+    height: 300px
+  }
 
-.section_header{
-  font-size: 40px;
-}
+  .section_header{
+    font-size: 40px;
+  }
 
-#about{
-  font-size: 20px;
-  padding: 10vh
-}
+  #about{
+    font-size: 20px;
+    padding: 10vh
+  }
 
-#games{
-  padding: 10vh
-}
+  #games{
+    padding: 10vh
+  }
 
-.game img{
-  height: 120px;
-}
+  .game img{
+    height: 120px;
+  }
 
-#projects{
-  padding: 10vh
-}
+  #projects{
+    padding: 10vh
+  }
 
-.project img{
-  height: 120px;
-}
+  .project img{
+    height: 120px;
+  }
 
-#contact{
-  font-size: 20px;
-  padding: 10vh
-}
+  #contact{
+    font-size: 20px;
+    padding: 10vh
+  }
 }
 
 a{
-color: black;
-text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
