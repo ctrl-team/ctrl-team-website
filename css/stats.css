@@ -1,0 +1,18 @@
+body{
+    background: #0f0f0f;
+    color: white;
+}
+.stats_back a{
+    color: white !important;
+    position: absolute;
+    top: 15vh;
+    right: 15vh;
+    z-index: 99;
+}
+#stats{
+    padding: 15vh;
+    position: relative;
+}
+#content{
+    margin-top: 2vh;
+}
