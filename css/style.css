@@ -48,7 +48,7 @@ html {
 
 .section_header{
     font-size: 45px;
-    letter-spacing: 0
+    letter-spacing: 0;
 }
 
 #games{
@@ -142,6 +142,8 @@ html {
   padding: 15vh;
   font-size: 30px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start
 }
 
 #contact_content{
