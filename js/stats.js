@@ -2,14 +2,26 @@
 const ctrl_name = document.getElementById('ctrl-name');
 const ctrl_create = document.getElementById('ctrl-create');
 const ctrl_reponr = document.getElementById('ctrl-reponr');
-const repos_div = document.getElementById('repos')
-const loader = document.getElementById('loader')
+const repos_div = document.getElementById('repos');
+const reposlist = document.getElementById('reposlist');
+const loader = document.getElementById('loader');
+const loader2 = document.getElementById('loader2');
 
 datacheck()
 
 function datacheck(){
     if(ctrl_name.innerHTML.length > 1){
         loader.style.display = 'none'
+    }else{
+        setTimeout(datacheck, 0)
+    };
+}
+//i know, r/programminghorror but I have to
+datacheck2()
+
+function datacheck2(){
+    if(reposlist.innerHTML.length > 1){
+        loader2.style.display = 'none'
     }else{
         setTimeout(datacheck, 0)
     };
@@ -47,7 +59,7 @@ req2.onreadystatechange = function () {
                 repodiv.className = 'repos'
                 repodiv.innerHTML = repo.name;
 
-                repos_div.appendChild(repodiv)
+                reposlist.appendChild(repodiv)
             }
         
          
