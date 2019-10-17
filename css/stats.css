@@ -5,14 +5,22 @@ body{
 .stats_back a{
     color: white !important;
     position: absolute;
-    top: 15vh;
-    right: 15vh;
+    top: 6vh;
+    right: 6vh;
     z-index: 99;
 }
 #stats{
-    padding: 15vh;
-    position: relative;
+    padding: 6vh;
+    font-size: 25px;;
 }
 #content{
     margin-top: 2vh;
+}
+@media screen and (max-width: 640px){
+    .stats_back{
+        right: -2vh;
+    }
+    #stats{
+        font-size: 15px;;
+    }
 }
