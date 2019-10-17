@@ -9,18 +9,35 @@ body{
     right: 6vh;
     z-index: 99;
 }
+.smaller_header{
+    font-size: 25px;
+    padding: 2vh 0 ;
+}
 #stats{
     padding: 6vh;
-    font-size: 25px;;
+    font-size: 21px;
 }
 #content{
     margin-top: 2vh;
 }
+#repos{
+    font-size: 21px;
+}
+.repos{
+    background: #070707;
+    margin: 2vh 0;
+    padding: 2vh;;
+}
+
+
 @media screen and (max-width: 640px){
     .stats_back{
         right: -2vh;
     }
     #stats{
+        font-size: 15px;
+    }
+    #repos{
         font-size: 15px;;
     }
 }
