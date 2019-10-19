@@ -55,11 +55,35 @@ req2.onreadystatechange = function () {
         {
             let repos = JSON.parse(this.responseText)
             for(repo of repos){
+                let repowrap = document.createElement('div')
+                repowrap.className = 'repowrap'
+
                 let repodiv = document.createElement('div');
                 repodiv.className = 'repos'
-                repodiv.innerHTML = repo.name;
+                repodiv.innerHTML = `<span class="arrow"><img src="img/arrow.png" width="20px"></span>  ${repo.name}`;
 
-                reposlist.appendChild(repodiv)
+                let expanddiv = document.createElement('div')
+                expanddiv.className = 'expanddiv';
+                expanddiv.innerHTML = 
+                `language: ${repo.language}<br>
+                description ${repo.description}`;
+                expanddiv.style.display = 'none'
+
+                reposlist.appendChild(repowrap)
+                repowrap.appendChild(repodiv)
+                repowrap.appendChild(expanddiv)
+
+                repodiv.addEventListener('click', ()=>{
+                    if(expanddiv.style.display == 'none')
+                    {
+                        expanddiv.style.display = 'block'
+                        repodiv.children[0].children[0].style.transform = 'scaleY(-1)'
+
+                    }else {
+                        expanddiv.style.display = 'none'
+                        repodiv.children[0].children[0].style.transform = 'scaleY(1)'
+                    }
+                })
             }
         
          

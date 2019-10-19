@@ -23,12 +23,29 @@ body{
 #repos{
     font-size: 21px;
 }
-.repos{
+.repowrap{
+    display: flex;
+    flex-direction: column;
     background: #070707;
     margin: 2vh 0;
-    padding: 2vh;;
+    user-select: none;
+}
+.repos:hover{
+    cursor: pointer;
+}
+.repos img{
+    margin-right: 1vh;
+}
+.arrow{
+}
+.expanddiv{
+    background: #050505;
+    display: none;
 }
 
+.expanddiv , .repos{
+    padding: 2vh;
+}
 
 @media screen and (max-width: 640px){
     .stats_back{
