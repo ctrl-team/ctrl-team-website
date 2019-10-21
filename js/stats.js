@@ -39,7 +39,6 @@ req.onreadystatechange = function () {
            ctrl_create.innerHTML = `Created at<span class="yellow">:</span> ${data.created_at.slice(0,10).replace(/-/g, ' ')}`;
            ctrl_reponr.innerHTML = `Repos number<span class="yellow">:</span> ${data.public_repos}`;
 
-
          }
        else
         console.log("error");
@@ -54,6 +53,7 @@ req2.onreadystatechange = function () {
      if(req2.status == 200)
         {
             let repos = JSON.parse(this.responseText)
+
             for(repo of repos){
                 let repowrap = document.createElement('div')
                 repowrap.className = 'repowrap'
@@ -65,9 +65,34 @@ req2.onreadystatechange = function () {
                 let expanddiv = document.createElement('div')
                 expanddiv.className = 'expanddiv';
                 expanddiv.innerHTML = 
-                `language: ${repo.language}<br>
-                description ${repo.description}`;
+                `<div class="expanddivcontent"><span class="yellow">language</span>: ${repo.language}</div><br>
+                <div class="expanddivcontent"><span class="yellow">description</span>: ${repo.description}</div><br>
+                <div class="expanddivcontent"><span class="yellow">created at</span>: ${repo.created_at.slice(0,10).replace(/-/g, ' ')}</div><br>`;
+
                 expanddiv.style.display = 'none'
+
+                let contributors = ''
+
+
+                //CONTRIBUTORS
+
+                fetch('https://api.github.com/repos/ctrl-team/' + repo.name + '/contributors')
+                .then(resp => resp.json())
+                .then(resp => {
+                    for(contributor of resp){
+                        contributors += contributor.login + ' '
+                    }
+
+                    expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">contributors</span>: ${contributors}</div><br>`
+                })
+
+                //LAST COMMIT
+
+                fetch('https://api.github.com/repos/ctrl-team/' + repo.name + '/commits')
+                .then(resp => resp.json())
+                .then(resp=>{
+                    expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">last commit</span>: ${resp[0].commit.message} <span class="yellow">by</span> ${resp[0].commit.author.name}</div>`
+                })
 
                 reposlist.appendChild(repowrap)
                 repowrap.appendChild(repodiv)
@@ -93,3 +118,7 @@ req2.onreadystatechange = function () {
   }
 };
 req2.send()
+
+
+
+

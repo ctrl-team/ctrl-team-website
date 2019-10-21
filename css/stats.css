@@ -46,7 +46,10 @@ body{
 .expanddiv , .repos{
     padding: 2vh;
 }
-
+.expanddivcontent{
+    margin: -5px;
+    padding: 4px;
+}
 @media screen and (max-width: 640px){
     .stats_back{
         right: -2vh;
