@@ -60,19 +60,20 @@ req2.onreadystatechange = function () {
 
                 let repodiv = document.createElement('div');
                 repodiv.className = 'repos'
-                repodiv.innerHTML = `<span class="arrow"><img src="img/arrow.png" width="20px"></span>  ${repo.name}`;
+                repodiv.innerHTML = `<span class="arrow"><img src="img/arrow.png" width="20px"></span> </span> <span class="repotitle">${repo.name}</span>`;
 
                 let expanddiv = document.createElement('div')
                 expanddiv.className = 'expanddiv';
                 expanddiv.innerHTML = 
-                `<div class="expanddivcontent"><span class="yellow">language</span>: ${repo.language}</div><br>
+                `
+                <div class="expanddivcontent"><span class="yellow"><a href="${repo.svn_url}">url</a></span></div><br>
+                <div class="expanddivcontent"><span class="yellow">language</span>: ${repo.language}</div><br>
                 <div class="expanddivcontent"><span class="yellow">description</span>: ${repo.description}</div><br>
                 <div class="expanddivcontent"><span class="yellow">created at</span>: ${repo.created_at.slice(0,10).replace(/-/g, ' ')}</div><br>`;
 
                 expanddiv.style.display = 'none'
 
                 let contributors = ''
-
 
                 //CONTRIBUTORS
 
@@ -84,11 +85,9 @@ req2.onreadystatechange = function () {
                     }
 
                     expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">contributors</span>: ${contributors}</div><br>`
-
-                //LAST COMMIT
-
                     
                 })
+                //LAST COMMIT
                 .then(
                     fetch('https://api.github.com/repos/ctrl-team/' + repo.name + '/commits/master')
                     .then(resp1 => resp1.json())

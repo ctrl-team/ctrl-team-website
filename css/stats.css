@@ -36,7 +36,8 @@ body{
 .repos img{
     margin-right: 1vh;
 }
-.arrow{
+.yellow a{
+    color: #FFCC00;
 }
 .expanddiv{
     background: #050505;
@@ -50,6 +51,11 @@ body{
     margin: -5px;
     padding: 4px;
 }
+.url{
+}
+.url img{
+    margin-bottom: -2px;
+}
 @media screen and (max-width: 640px){
     .stats_back{
         right: -2vh;
@@ -60,4 +66,7 @@ body{
     #repos{
         font-size: 15px;;
     }
+}
+a{
+    color: white;
 }
