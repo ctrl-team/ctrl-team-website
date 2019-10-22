@@ -84,15 +84,16 @@ req2.onreadystatechange = function () {
                     }
 
                     expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">contributors</span>: ${contributors}</div><br>`
-                })
 
                 //LAST COMMIT
 
-                fetch('https://api.github.com/repos/ctrl-team/' + repo.name + '/commits')
-                .then(resp => resp.json())
-                .then(resp=>{
-                    expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">last commit</span>: ${resp[0].commit.message} <span class="yellow">by</span> ${resp[0].commit.author.name}</div>`
+                    fetch('https://api.github.com/repos/ctrl-team/' + repo.name + '/commits')
+                    .then(resp => resp.json())
+                    .then(resp=>{
+                        expanddiv.innerHTML += `<div class="expanddivcontent"><span class="yellow">last commit</span>: ${resp[0].commit.message} <span class="yellow">by</span> ${resp[0].commit.author.name}</div>`
+                    })
                 })
+
 
                 reposlist.appendChild(repowrap)
                 repowrap.appendChild(repodiv)
