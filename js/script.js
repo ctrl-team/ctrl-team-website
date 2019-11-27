@@ -37,6 +37,11 @@ let games = [
         "name": "Spooky Game",
         "screenshot": "SpookyGame.png"
     },
+    {
+        "url": "https://dinozzz.glitch.me/",
+        "name": "Dinozzz",
+        "screenshot": "dinozzz.png"
+    }
 ]
 let project = [
     {
