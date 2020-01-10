@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: "Montserrat";
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.yellow {
+  background: linear-gradient(
+    41deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 238, 0, 1) 69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
