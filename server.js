@@ -5,15 +5,7 @@ var port = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.redirect("/eng");
-});
-
-app.get("/eng", (req, res) => {
-  res.sendFile(__dirname + "/views/eng.html");
-});
-
-app.get("/pl", (req, res) => {
-  res.sendFile(__dirname + "/views/pl.html");
+  res.sendFile(__dirname + "/views/eng.html")
 });
 
 app.get("/portfolio", (req, res) => {
