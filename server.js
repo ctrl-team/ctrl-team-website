@@ -1,5 +1,6 @@
 let express = require("express"),
   app = express();
+var port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
@@ -23,6 +24,6 @@ app.get("/team", (req, res) => {
   res.sendFile(__dirname + "/views/team.html");
 });
 
-app.listen(80, () => {
+app.listen(port, () => {
   console.log("server ready");
 });
