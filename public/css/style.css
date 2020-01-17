@@ -1,21 +1,55 @@
 body {
+  background: #ffcc00;
+  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
-  background: #0f0f0f;
-  font-family: "Montserrat";
 }
-
-.title {
+section{
+  height: 100vh
+}
+.yellow{
+  color: #ffcc00
+}
+.btn{
+  padding: 3px;
+  width: 20vh;
+  height: 5vh;
+  font-size: 28px;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px
+}
+#top {
+  background: #262122;
   color: white;
-  text-align: center;
+  font-size: 110px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40vw), 0 100%)
+}
+#top_content{
+  padding: 15vh 15vh;
+}
+#top_btn{
+  margin-top: 10vh;
+  background: #ffcc00;
+  color: #262122
 }
 
-.yellow {
-  background: linear-gradient(
-    41deg,
-    rgba(255, 0, 0, 1) 0%,
-    rgba(255, 238, 0, 1) 69%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#about{
+  background: #ffcc00
+}
+
+@media screen and (max-width: 900px){
+  .btn{
+    font-size: 20px;
+    width: 22vh;
+    height: 6vh;
+  }
+  #top{
+    font-size: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100vw), 0 100%)
+  }
+  #top_content{
+    padding: 10vh 5vh;
+  }
 }
